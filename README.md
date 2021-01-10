@@ -1,24 +1,3 @@
-# new
+# Daily Log
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Daily log is a private online logbook where users can store all sorts of things - links, articles, writings, images, etc. 

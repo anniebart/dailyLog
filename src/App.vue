@@ -1,24 +1,19 @@
 <template>
   <div id="app">
-  <nav>
-    <router-link to="/">
-    <img src="./assets/LOGO.png">
-    </router-link>
-    <div>
-      <router-link to="/">Home</router-link>
-      <router-link to="/login">Login</router-link>
-      <router-link to="/signup">Sign Up</router-link>
-      </div>
-    </nav>
+  <nav-bar> </nav-bar>
   <router-view></router-view>
   
   </div>
 </template>
 
 <script>
-
-
-
+import NavBar from './components/NavBar.vue'
+export default {
+  components: {
+    NavBar
+  }
+ 
+}
 </script>
 
 <style>
@@ -36,6 +31,22 @@
 
 }
 
+body {
+  background-color: #EEF2F7;
+}
+
+a{
+  text-decoration: none;
+  color: #2c3e50;
+  margin: 0 8px;
+  font-weight: 800;
+}
+
+
+a:hover {
+  color: #436489;
+}
+
 nav img {
   height: 48px;
 }
@@ -43,14 +54,22 @@ nav img {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 16px 5%;
-  background-color: E7E8E9;
+  background-color: #EEF2F7;
   box-shadow: #000 4px 0 4px;
 }
 
-.router-link-exact-active{
-  color: white;
+.router-link-exact-active {
+  color: #436489;
+ border-bottom: 2px solid #2c3e50;
 }
+img.router-link-exact-active {
+  border-bottom-color:#E7E8E9 ;
+}
+
+
+
 body {
 margin:0;
 top:0;

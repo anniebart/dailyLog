@@ -15,11 +15,9 @@
 
 <script>
 import Hero from './Hero.vue'
-import MainFooter from './MainFooter.vue'
 export default {
     name: 'HomePage', 
-    components: Hero,
-    MainFooter
+    components: Hero
 }
 </script>
 <style scoped>

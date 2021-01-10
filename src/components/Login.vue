@@ -1,12 +1,9 @@
 <template>
    <div id="signup">
        <div class="container">
-       <form method="POST" action="/signup">
-           <h1> sign up </h1>
-           <div>
-               <label for="email">email</label>
-               <input for="email" type="email" autocomplete="email">
-           </div>
+       <form>
+           <h1> Log in </h1>
+         
            <div>
            <label for="username">username</label>
            <input name="username" autocomplete="username"> </div>
@@ -20,11 +17,6 @@
    </div> 
 </template>
 
-<script>
-export default {
-    name: "SignUp"
-}
-</script>
 <style scoped>
 h1 {
     text-transform: uppercase;
@@ -71,6 +63,3 @@ button {
     color: white;
 }
 </style>
-
-
-
